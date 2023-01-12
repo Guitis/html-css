@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupando Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        article{
+            background-color: rgb(87, 86, 86);
+            padding: 3px;
+            border-radius: 10px;
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+            
+        }
+        nav{
+            background-color: rgb(102,102,102);
+            padding: 3px;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.267);
+            border-radius: 10px;
+        }
+        article > aside{
+            background-color: rgb(206, 206, 206);
+            
+        }
+       .p{
+            border-radius: 10px 10px;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 0px 20px;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+        div#bola{ /*config para criar uma forma geometrica no site*/
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div></div><!--block level-->
+    <span></span><!--inline level-->
+    <header><!--cabeçalho-->
+        <h1>Meu site</h1>
+        <nav> <!--nav "navegação" "Menus"--> <a href="#">link</a>
+             <a href="#">link</a>
+             <a href="#">link</a>
+             <a href="#">link</a>
+             
+        </nav>
+
+    </header>
+    <main><!--conteúdo principal-->
+        <section id="assuntos"> <!--section "seções"-->
+        <p>Esportes Politica Tecnologia</p>
+        </section>
+
+            <article>
+                <aside>
+                    <h2>Notícias sobre Guitis</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum quidem perferendis accusantium voluptatum nihil dolor obcaecati. Quo dolore, maiores molestiae, aliquid error quibusdam inventore accusantium officiis modi ipsum, quod at!</p>
+                    
+                </aside>
+
+            </article>
+            <article class="p">
+                <p>Artigo escrito por Guitis Thomazotti</p>
+
+            </article>
+
+        </section>
+
+
+    </main>
+    <footer><!--rodapé-->
+        <p>Desenvolvido pelo Guitis</p>
+
+    </footer>
+    <div id="bola">
+
+    </div>
+</body>
+</html>

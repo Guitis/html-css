@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+  <picture>
+    <!--sempre colocar do menor para o maior -->
+    <source media="(max-width: 600px)" srcset="foto-p.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="foto-m.png" type="image/png">
+    <img src="foto-g.png" alt="Imagem flexível">
+  </picture>
+  <h1>Reproduzindo áudio</h1>
+  <p>Vamos aprender a reproduzir áudio em html</p>
+<audio preload="auto" autoplay controls><!--para utilização de plano de fundo, digitar "poster"-->
+ <source srcset="happy-mistake.mp3" type="audio/mpeg"><!--Primeiro vai tentar carregar o MP3-->
+<source srcset="happy-mistake.ogg" type="audio/ogg"><!--Segundo vindo do OGG-->
+<source srcset="happy-mistake.wav" type="audio/wav"><!--Terceiro seguido do wav-->
+</audio>
+</body>
+<body>
+    <h2>Criando videos desta forma</h2>
+     <p>Esta é a forma mais simples de hospedar um video local</p>
+     <video src="video.mp4" preload="metadata" width="250"  height="315" controls loop></video><!--utilizar a tag loop para o video reproduzir automatico toda vez que acabar-->
+</body>
+<body>
+    <h2>Videos externos</h2>
+    <p>Aqui colocaremos videos hospedados externamente, ou seja do "YouTube"</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
