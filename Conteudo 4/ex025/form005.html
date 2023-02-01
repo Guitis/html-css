@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendendo a usar Check Box</h1>
+    
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <label for="imasculino"><input type="radio" name="sexo" id="imasculino"> Masculino</label><br>
+            <input type="radio" name="sexo" id="ifeminino"><label for="ifeminino"> Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <label for="ibasquete"><input type="checkbox" name="basquete" id="ibasquete"> Basquete 🏀</label><br><br>
+            <label for="ifutebol"><input type="checkbox" name="futebol" id="ifutebol"> Futebol ⚽️</label><br><br>
+            <label for="itenis"><input type="checkbox" name="tenis" id="itenis"> Tênis 🥎</label><br><br>
+            <label for="ifa"><input type="checkbox" name="Futebol Americano" id="ifa"> Futebol Americano 🏈 </label><br><br>
+            <label for="ipgpg"><input type="checkbox" name="Ping Pong" id="ipgpg"> Ping Pong 🏓</label><br><br>
+            <label for="ibasebol"><input type="checkbox" name="basebol" id="ibasebol"> Basebol ⚾️</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
