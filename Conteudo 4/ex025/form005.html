@@ -15,19 +15,26 @@
     <h1>Aprendendo a usar Check Box</h1>
     
     <form action="cadastro.php" method="get" autocomplete="on">
-        <fieldset>
-            <legend>Sexo</legend>
-            <label for="imasculino"><input type="radio" name="sexo" id="imasculino"> Masculino</label><br> <!--No caso de SEXO colocar o "name="iguais" como no exemplo acima"-->
-            <input type="radio" name="sexo" id="ifeminino"><label for="ifeminino"> Feminino</label>
+        <fieldset class="dados">
+            <legend>Preencha seus dados:</legend>
+            <label for="inome">Nome: </label>
+            <input type="text" name="nome" id="inome" required maxlength="30" minlength="8" autocomplete="name" placeholder="*Nome"><br>
+            <label for="isobrenome">Sobrenome: </label>
+            <input type="text" name="sobrenome" id="isobrenome" required maxlength="30" minlength="3" placeholder="*Sobrenome">
         </fieldset>
         <fieldset>
-            <legend>Esportes Favoritos</legend>
+            <legend>Sexo:</legend>
+            <label for="imasculino"><input type="radio" name="sexo" id="imasculino"> Masculino</label><br><br> <!--No caso de SEXO colocar o "name="iguais" como no exemplo acima"-->
+            <input type="radio" name="sexo" id="ifeminino" required><label for="ifeminino"> Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos:</legend><br>
             <label for="ibasquete"><input type="checkbox" name="basquete" id="ibasquete"> Basquete 🏀</label><br><br>
             <label for="ifutebol"><input type="checkbox" name="futebol" id="ifutebol"> Futebol ⚽️</label><br><br>
             <label for="itenis"><input type="checkbox" name="tenis" id="itenis"> Tênis 🥎</label><br><br>
             <label for="ifa"><input type="checkbox" name="Futebol Americano" id="ifa"> Futebol Americano 🏈 </label><br><br>
             <label for="ipgpg"><input type="checkbox" name="Ping Pong" id="ipgpg"> Ping Pong 🏓</label><br><br>
-            <label for="ibasebol"><input type="checkbox" name="basebol" id="ibasebol"> Basebol ⚾️</label>
+            <label for="ibasebol"><input type="checkbox" name="basebol" id="ibasebol"> Basebol ⚾️</label><br>
         </fieldset>
         <p>
             <input type="submit" value="Enviar">
