@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Testando formulário com tag Range</h1>
+    <form action="inum">
+        <fieldset>
+            <p>
+                <label for="inu">Número: </label>
+                <input type="range" name="numero" id="inu" min="0" max="10" value="5" 
+                oninput="ival.innerHTML = Number(inu.value)"><!--oninput="ival.innerHTML tem que estar igual ao <output id="ival"> para que funcione"-->
+                <output id="ival">5</output>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
